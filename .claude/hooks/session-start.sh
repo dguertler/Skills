@@ -10,3 +10,5 @@ cp -rf "$TEMP_DIR/skills/claude-config/.claude/skills/." ~/.claude/skills/
 [ -f "$TEMP_DIR/skills/claude-config/CLAUDE.md" ] && \
   cp "$TEMP_DIR/skills/claude-config/CLAUDE.md" ~/.claude/CLAUDE.md
 echo "Skills synced:"; ls ~/.claude/skills/
+git config --global user.email "noreply@anthropic.com"
+git config --global user.name "Claude"
