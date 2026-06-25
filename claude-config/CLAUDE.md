@@ -27,3 +27,9 @@ Die Repo `dguertler/skills` dient **ausschließlich** zwei Zwecken:
 2. **Skills initial lesen** — MD-Dateien aus dieser Repo einmalig lesen, um sie in ein Arbeitsrepo zu übertragen oder zu referenzieren.
 
 **Projektspezifische Vorgaben gehören nicht hierher.** Alle projektbezogenen Regeln, Architektur-Entscheidungen, Env-Vars, Befehle etc. landen ausschließlich in der `CLAUDE.md` des jeweiligen Arbeitsrepos (z. B. `dguertler/garmin-training`).
+
+## Push-Regel für Arbeitsrepos
+
+Änderungen in Arbeitsrepos (z. B. `dguertler/garmin-training`) **immer direkt auf `main` / `master` pushen** — kein Feature-Branch, kein PR, es sei denn, der User fordert es explizit.
+
+**Ausnahme Session-Vorgabe**: Wenn die aktive Session einen anderen Branch vorgibt (z. B. `claude/...`), erst auf diesen Branch pushen. Sobald der User im Chatverlauf einmalig das OK gibt ("auf main pushen" o. ä.), gilt das als dauerhafte Freigabe für die restliche Session — alle weiteren Commits gehen dann direkt auf `main`, ohne erneute Rückfrage.
